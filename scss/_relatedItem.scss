@@ -1,0 +1,39 @@
+.related-item{
+    background: white;
+    width:340px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows:  30px auto;
+    grid-template-areas:
+    "img title"
+    "img description" ;
+    
+    padding:1.625rem;
+    border-top: 2px dotted $textColor;
+
+    &__img{
+        grid-area: img;
+        place-self: center start;
+
+        img{
+             border-radius: 50%;
+        }
+    }
+
+    &__eyebrow{
+        grid-area: title;
+        color:$textColor;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 75%;
+    }
+    &__link{
+        grid-area: description;
+        color:black ;
+        align-self: start;
+
+        &:hover{
+            color:hsl(0, 0%, 47%);
+        }
+    }
+}

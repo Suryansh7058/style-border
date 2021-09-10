@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: $backgroundBodyColor;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+
+}
+
+
+button{
+    background: transparent;
+}
+.info{
+    background-color:white;
+    padding: 1.625rem;
+    transform: translate(63px, -194px);
+    display: flex;
+    flex-direction: column;
+    button{
+        font-weight:bold;
+        background-image: linear-gradient(35deg,#ff503c 50%,transparent 0);
+        background-position: -400px 0;
+        background-repeat: no-repeat;
+        border: 1px solid #ff503c;
+        color: #ff503c;
+        display: block;
+        font-family: FoundersGroteskCond,Arial Narrow,Arial,sans-serif;
+        font-size: 16px;
+        line-height: 1;
+        padding: 24px 4px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: background-position .2s ease;
+        width: 100%;
+
+        &:hover{
+            background-position: 0 0;
+            background-size: 325% 100%;
+            border: 1px solid #ff503c;
+            color: #fff;
+        }
+    }
+}

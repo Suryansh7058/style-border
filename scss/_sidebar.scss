@@ -1,0 +1,27 @@
+.wrapper{
+    .shop{
+        width:16.0625rem;
+        height:16.1825rem;
+        border:2px solid $textColor;
+        position: relative;
+
+        &::before{
+            content:'';
+            position: absolute;
+            width:1.375rem;
+            height:90.5%;
+            top:10%;
+            right:-0.8%;
+            background: $backgroundBodyColor;
+            border-top:2px solid $textColor;
+        }
+
+        h1{
+            text-align: center;
+            font-weight: 400;
+            color: $textColor;
+            font-family: "Open Sans", "Helvetica Neue";
+            margin-top: 1rem;
+        }
+    }
+}
